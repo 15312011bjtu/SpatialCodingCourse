@@ -10,25 +10,19 @@ h1 {
     text-align: center;
 }
 
-    h1:hover {
-        color: white;
-        border: 2px solid orange;
-        font-size: 60px;
-        background-color: black;
-    }
+h1:hover {
+    color: white;
+    border: 2px solid orange;
+    font-size: 60px;
+    background-color: black;
+}
 
 h3 {
     color: black;
     text-align: left;
 }
 
-p1 {
-    text-align: right;
-        color: black;
-    padding: 10px;
-    margin-inline-end: 40px;
-    text-align: left;
-}
+
 
 p {
     

@@ -1,1 +1,3 @@
 # SpatialCodingCourse
+# nothing here now
+#

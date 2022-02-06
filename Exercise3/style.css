@@ -1,0 +1,21 @@
+body {
+    background-color: LemonChiffon;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    text-align: left;
+}
+
+p {
+    color: black;
+    padding: 10px;
+    margin-inline-end: 40px;
+    border: 2px solid yellow;
+    text-align: left;
+}

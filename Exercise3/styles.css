@@ -33,3 +33,12 @@ p {
 }
 
 
+.p_right {
+    font-family: Oswald;
+    font-style: italic;
+    text-align: right;
+
+    color: black;
+    padding: 10px;
+    margin-inline-end: 40px;
+}

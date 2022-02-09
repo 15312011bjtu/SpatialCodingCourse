@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family:'Adobe Arabic';
+}
+
+
+
+#container {
+    background: green;
+    margin: 0;
+    padding: 0;
+}

@@ -12,11 +12,13 @@ body {
 
 .container {
     display: flex;
-    background: green;
-    margin: 24;
-    padding: 24;
+    
+    margin: 12;
+    padding: 12;
 }
 
 .item {
     width: 25%;
+    background: black;
+    color:white;
 }

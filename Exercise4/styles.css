@@ -15,7 +15,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     margin: 24;
-    padding: 24;
+    padding: 12;
 }
 
 .item {

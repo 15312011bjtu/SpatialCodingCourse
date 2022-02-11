@@ -13,12 +13,15 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    margin: 12;
-    padding: 12;
+    margin: 24;
+    padding: 24;
 }
 
 .item {
     width: 25%;
-    background: black;
-    color:white;
+    font-family: Roboto Condensed;
+    background: SteelBlue;
+    color: white;
+    margin: 12;
+    padding: 12;
 }

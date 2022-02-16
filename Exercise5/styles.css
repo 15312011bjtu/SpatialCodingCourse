@@ -1,0 +1,44 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Adobe Arabic';
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background:red;
+
+}
+
+.main {
+    display:flex;
+    flex-direction:row;
+    background:yellow;
+}
+
+.section {
+    width:75%;
+    background: green;
+}
+
+.aside {
+    width:25%;
+    background:blue;
+}
+
+.item {
+    font-family: Roboto Condensed;
+    font-size: 12;
+    background: SteelBlue;
+    color: white;
+    margin: 12;
+    padding: 12;
+}

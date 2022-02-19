@@ -36,6 +36,9 @@ img {
     background-size: cover;
 }
 
+.LinkofHiddenPhoto {
+    display: none;
+}
 
 
 @media (max-width: 960px) {
@@ -53,6 +56,10 @@ img {
 
     @media (max-width: 480px){
         img {
-            visibility: hidden;
+            display: none;
+        }
+
+        .LinkofHiddenPhoto {
+            display: block;
         }
     }

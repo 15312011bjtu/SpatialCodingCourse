@@ -10,15 +10,23 @@ body {
     font-size: 1em;
 }
 
+p {
+    text-indent: 2em;
+}
 
 
-.container {
+.container1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: 2px solid black;
     justify-content: space-around;
-    margin: 12px 24px 12px 24px;
-    padding: 12px 24px 12px 24px;
+    margin: 6px 12px 6px 12px;
+    padding: 6px 12px 6px 12px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
 }
 
 .item {
@@ -31,35 +39,42 @@ body {
 }
 
 img {
-    align-self: flex-start;
-    width: 50vw;
-    background-size: cover;
-}
-
-.LinkofHiddenPhoto {
     display: none;
 }
 
+.LinkofHiddenPhoto {
+    display: block;
+}
 
-@media (max-width: 960px) {
-    .container {
-        flex-direction: column;
-        margin: 6px 12px 6px 12px;
-        padding: 6px 12px 6px 12px;
-    }
+
+@media (min-width: 480px) {
+
 
     img {
+        display:block;
+        align-self: flex-start;
         width: 80vw;
+        background-size: cover;
     }
 
 
 
-    @media (max-width: 480px){
+    .LinkofHiddenPhoto {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 960px){
+    .container1 {
+        flex-direction: row;
+        margin: 12px 24px 12px 24px;
+        padding: 12px 24px 12px 24px;
+    }
+            
         img {
-            display: none;
-        }
-
-        .LinkofHiddenPhoto {
-            display: block;
-        }
+        width: 35vw;
     }
+        
+}

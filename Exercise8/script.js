@@ -2,7 +2,14 @@ let FontSizeButton = document.querySelectorAll('.FontSizeButton');
 
 let textbody = document.getElementById('testfontsizetext');
 
+alert('javascript works')
+
+
+
+
+
 function largefont() {
+	alert('something'); /* https://codepen.io/celestelayne/pen/QWGOVLE?editors=1111 */
 	console.log("hello!");
 	textbody.classList.remove('mediumfont');
 	textbody.classList.remove('smallfont');
@@ -20,6 +27,8 @@ function smallfont() {
 	textbody.classList.remove('mediumfont');
 	textbody.classList.add('smallfont');
 }
+
+
 
 FontSizeButton[0].addEventListener('click', largefont)
 FontSizeButton[1].addEventListener('click', mediumfont)

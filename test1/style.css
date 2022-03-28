@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    color: #f4f4f4;
+    background: tomato;
+}
+
+/* write animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(800px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* write class to be triggered */
+.run-animation {
+    animation: slide 5s;
+    animation-iteration-count: 5;
+}

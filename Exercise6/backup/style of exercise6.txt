@@ -46,72 +46,51 @@ img {
     display: block;
 }
 
-
-
-
-
-
-
-nav {
-    height: 60px;
+.square1 {
+    height:10em;
+    width:100vw;
+    background:blue;
 }
 
-ul.topmenu {
-    display: flex;
-    color: black;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    list-style: none;
-    background: tomato;
-    margin: 0;
-    line-height: 60px;
-}
-
-.topmenu_1 {
-    flex-grow: 2;
-    font-size: 1em;
-    font-family: 'Righteous', sans-serif;
-    color: white;
-}
-
-.topmenu_1 {
-    flex-grow: 1;
-    font-size: 1em;
-    font-family: 'Righteous', sans-serif;
-    color: white;
-}
-
-.menubox {
-    border: 2px solid black;
+.button1 {
+    padding: 1em;
+    width: 20em;
+    height: 1em;
     background: tomato;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 3em;
 }
-    .menubox:hover {
-        animation-name: menubox_animation;
-        animation-duration: 3s;
+
+    .button1:hover {
+        animation-name: button1_animation;
+        animation-duration: 2s;
         animation-timing-function: linear;
         animation-delay: 0s;
         animation-iteration-count: 3;
         animation-direction: normal;
         animation-play-state: running;
         animation-fill-mode: none;
+
+
     }
 
-
-
-@keyframes menubox_animation {
+@keyframes button1_animation {
     0% {
+        background-color: black;
+        color:white;
     }
 
     50% {
-    }
-
-    75% {
+        background-color: black;
+        color: white;
+        transform: scaleY(0.5);
     }
 
     100% {
         background-color: black;
+        color: white;
+        transform: translateX(50vw) scaleY(0.25) scaleX(3);
+        animation-iteration-count: 1;
     }
 }
 

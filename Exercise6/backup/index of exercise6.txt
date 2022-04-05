@@ -1,4 +1,4 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>Exercise 6</title>
@@ -7,24 +7,13 @@
 </head>
 <body>
 
-    <nav>
-        <ul class="topmenu">
-            <li class="menubox">
-                <a href="../index.html" align="left" class="topmenu_1">Back to Home</a>
-            </li>
-
-            <li class="menubox">
-                <a href="https://en.wikipedia.org/wiki/Lina_Bo_Bardi" target="_blank" class="topmenu_1">Button: More about Lina Bo Bardi</a>
-            </li>
-
-            <li><p align="right" class="topmenu_2">Edited by Hanbo Lei Feb. 24 2022</p></li>
-
-        </ul>
-    </nav>
 
 
-
-
+    <p align="right">Edited by Hanbo Lei Feb. 24 2022</p>
+    <p align="right"><a href="../index.html">Back to Home</a></p>
+    <div class="container1 square1">
+        <a href="https://en.wikipedia.org/wiki/Lina_Bo_Bardi" target="_blank"><div class="button1">More about Lina Bo Bardi</div></a>
+    </div>
 
 
     <div class="container1">

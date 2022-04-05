@@ -1,19 +1,35 @@
-/* 
+let FontSizeButton = document.querySelectorAll('.FontSizeButton');
 
-Create an animation that moves the square across the page when it is clicked.
+let textbody = document.getElementById('testfontsizetext');
 
-Step 1. Grab the square
+alert('javascript works')
 
-Step 2. Write the function that adds the animation, e.g. function moveRight(){};
 
-Step 3. Write the event listener and handler
 
-*/
 
-let square = document.querySelector(".square");
 
-function moveRight() {
-    square.classList.add("run-animation");
+function largefont() {
+	alert('something'); /* https://codepen.io/celestelayne/pen/QWGOVLE?editors=1111 */
+	console.log("hello!");
+	textbody.classList.remove('mediumfont');
+	textbody.classList.remove('smallfont');
+	textbody.classList.add('largefont');
+}
+function mediumfont() {
+	console.log("hello!");
+	textbody.classList.remove('largefont');
+	textbody.classList.remove('smallfont');
+	textbody.classList.add('mediumfont');
+}
+function smallfont() {
+	console.log("hello!");
+	textbody.classList.remove('largefont');
+	textbody.classList.remove('mediumfont');
+	textbody.classList.add('smallfont');
 }
 
-square.addEventListener("click", moveRight);
+
+
+FontSizeButton[0].addEventListener('click', largefont)
+FontSizeButton[1].addEventListener('click', mediumfont)
+FontSizeButton[2].addEventListener('click', smallfont)

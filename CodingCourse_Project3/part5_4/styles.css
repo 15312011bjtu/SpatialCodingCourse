@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+
+body {
+    font-family: 'Adobe Arabic';
+    font-size: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.selectedmovie_button {
+    /*¼Óº¯ÊýÓÃ*/
+}
+
+
+
+
+
+
+
+
+.main_box {
+    display: flex;
+    flex-direction: row;
+    margin: 6px 12px 6px 12px;
+}
+
+.sereach_result {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 2.5% 0% 20%;
+}
+
+.screen_SearchTarget {
+    background: tomato;
+}
+
+.movie_list {
+
+}
+
+.movielist_container {
+    /*   background-color: #f15b31; */
+    padding: 2px;
+    /*   display: flex; */
+    border: 2px solid #141414;
+    width: 80%;
+    margin: 2px;
+    background: blue;
+}
+
+.poster_left /*fixed the width*/  {
+    width: 100%;
+}
+
+
+
+
+
+.page_nav {
+    background: blue;
+}
+
+.line_1 {
+    width: 0.25px;
+    /*height:20%;*/
+    border-right: solid;
+}
+
+
+
+
+.movie_selected {
+    display: flex;
+    flex-direction:column;
+    margin: 0% 20% 0% 2.5%;
+    background: red;
+}
+
+.main_info {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_poster {
+    width:50%;
+}
+.detail_text {
+    width:50%;
+}
+
+.text_list {
+
+}
+
+.infolist_container {
+
+}
+
+
+
+.storyline {
+
+}
+
+
+.related_movies {
+}
+
+.related_movies_row {
+    display:flex;
+    flex-direction:row;
+}
+
+.poster_related {
+    height:30px;
+    margin: 10px;
+}
+

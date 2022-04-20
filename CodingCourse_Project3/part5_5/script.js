@@ -215,7 +215,8 @@ function RenderSelectedInfo(e) {
     searchString = this.selectedMovie.Rating;
     SearchedMovie = movie_dataset.filter(function (f) {
         if (searchString) {
-            return f.Rating === searchString  //not list, do not use ".every"
+            return Math.abs(f.Rating - searchString) <= 1;
+            //return f.Rating === searchString  //not list, do not use ".every"
         }
     });
     index_selectedMovie = SearchedMovie.indexOf(this.selectedMovie) // find the index of selectedMovie

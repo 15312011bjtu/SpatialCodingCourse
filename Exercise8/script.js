@@ -1,35 +1,36 @@
-let FontSizeButton = document.querySelectorAll('.FontSizeButton');
+/*declare elements, defined as const*/
+const change = document.getElementById('Button');
 
-let textbody = document.getElementById('testfontsizetext');
+const fly = document.getElementsByTagName('body')[0];
 
-alert('javascript works')
+const pink = document.querySelector('.pink');
+const white = document.querySelector('.white');
+const blue = document.querySelector('.blue');
+const red = document.querySelector('.red');
+
+//console.log(change)
 
 
 
 
-
-function largefont() {
-	alert('something'); /* https://codepen.io/celestelayne/pen/QWGOVLE?editors=1111 */
-	console.log("hello!");
-	textbody.classList.remove('mediumfont');
-	textbody.classList.remove('smallfont');
-	textbody.classList.add('largefont');
-}
-function mediumfont() {
-	console.log("hello!");
-	textbody.classList.remove('largefont');
-	textbody.classList.remove('smallfont');
-	textbody.classList.add('mediumfont');
-}
-function smallfont() {
-	console.log("hello!");
-	textbody.classList.remove('largefont');
-	textbody.classList.remove('mediumfont');
-	textbody.classList.add('smallfont');
+function changeColorPink() {
+    fly.style.background = 'pink';
 }
 
+function changeColorWhite() {
+    fly.style.background = 'white';
+}
+
+function changeColorBlue() {
+    fly.style.background = 'blue';
+}
+
+function changeColorRed() {
+    fly.style.background = 'red';
+}
 
 
-FontSizeButton[0].addEventListener('click', largefont)
-FontSizeButton[1].addEventListener('click', mediumfont)
-FontSizeButton[2].addEventListener('click', smallfont)
+pink.addEventListener('click', changeColorPink)
+white.addEventListener('click', changeColorWhite)
+blue.addEventListener('click', changeColorBlue)
+red.addEventListener('click', changeColorRed)

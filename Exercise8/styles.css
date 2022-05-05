@@ -1,140 +1,70 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
+
 }
 
+html {
+    margin: 50px;
+    font-size: 10px;
+}
 
+/* Button, switcher */
+ul {
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+    margin-bottom: 50px;
+}
 
-body {
-    font-family: 'Adobe Arabic';
-    font-size: 1em;
+li {
+    width: 20px;
+    margin-right: 20px;
+    height: 20px;
+    border-radius: 15px;
+    border: 1.5px solid black;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.white {
+    background-color: white;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: tomato;
+}
+
+/* main section*/
+main {
+    color: black;
 }
 
 p {
-    text-indent: 2em;
+    margin-top: 10px;
 }
-
-.FontSizeButton {
-    border: 2px solid black;
-    display: inline-black;
-}
-
-.largefont {
-    font-size: 2em;
-}
-
-.mediumfont {
-    font-size: 1em;
-}
-
-.smallfont {
-    font-size: 0.5em;
-}
-
-.container1 {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    justify-content: space-around;
-    margin: 6px 12px 6px 12px;
-    padding: 6px 12px 6px 12px;
-}
-
-.container2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.item {
-    font-family: Roboto Condensed;
-    font-size: 1em;
-    background: SteelBlue;
+/*color changes*/
+.red-theme {
+    background-color: tomato;
     color: white;
-    margin: 12px;
-    padding: 12px;
 }
 
-img {
-    display: none;
+.white-theme {
+    background-color: white;
+    color: black;
 }
 
-.LinkofHiddenPhoto {
-    display: block;
+.pink-theme {
+    background-color: pink;
+    color: white;
 }
 
-
-
-
-.button1 {
-    padding: 1em;
-    width: 20em;
-    height: 1em;
-    background: tomato;
-    align-items: center;
-    font-size: 3em;
-}
-
-    .button1:hover {
-        animation-name: button1_animation;
-        animation-duration: 2s;
-        animation-timing-function: linear;
-        animation-delay: 0s;
-        animation-iteration-count: 3;
-        animation-direction: normal;
-        animation-play-state: running;
-        animation-fill-mode: none;
-    }
-
-@keyframes button1_animation {
-    0% {
-        background-color: black;
-        color: white;
-    }
-
-    50% {
-        background-color: black;
-        color: white;
-        transform: scaleY(0.5);
-    }
-
-    100% {
-        background-color: black;
-        color: white;
-        transform: translateX(50vw) scaleY(0.25) scaleX(3);
-        animation-iteration-count: 1;
-    }
-}
-
-
-
-
-
-@media (min-width: 480px) {
-    img {
-        display: block;
-        align-self: flex-start;
-        width: 80vw;
-        background-size: cover;
-    }
-
-
-
-    .LinkofHiddenPhoto {
-        display: none;
-    }
-}
-
-
-
-@media (min-width: 960px) {
-    .container1 {
-        flex-direction: row;
-        margin: 12px 24px 12px 24px;
-        padding: 12px 24px 12px 24px;
-    }
-
-    img {
-        width: 35vw;
-    }
+.blue-theme {
+    background-color: blue;
+    /*   change text to white */
+    color: white;
 }

@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Project3 Hanbo_Lei</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@500&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        Search Movies:
+        <input id="search" type="text" class="input" placeholder="Press Enter to search ..."  style=" margin: 12px; color:black" />
+        <span class="backhome"><a href="../index.html" style=" font-size: 2em; color: white">Back to Home</a></span>
+    </nav>
+    <div class="main_box">
+
+        <!-- left -->
+        <div class="sereach_result">
+            <div class="screen_SearchTarget">Results of N/A</div>
+            <div>
+                <ul class="movie_list"><!-- Ö÷Òªlist -->
+                No movie searching now
+                </ul>
+            </div>
+        </div>
+
+        <!-- middle line, divide left/right -->
+        <div class="line_1"></div>
+
+        <!-- right -->
+        <div class="right_half">
+            <div class="screen_SearchTarget">Information and Related Movies of Selected Movie</div>
+            <div class="movie_selected">
+
+                <div class="main_info">
+                    <div class="main_poster"></div>
+                    <div class="detail_text">
+                        <ul class="text_list">
+                            No Movie Selected
+                        </ul>
+                    </div>
+                </div>
+                <div class="storyline"></div>
+                <div class="related_movies">
+                    <br /><br />
+                    <p>Related Movie List</p>
+                    <ul>
+                        <li>
+                            <h4>Genre</h4>
+                            <div class="related_movies_row" id="Genre">No</div>
+                        </li>
+                        <li>
+                            <h4>Release Year</h4>
+                            <div class="related_movies_row" id="Release_Year">No</div>
+                        </li>
+                        <li>
+                            <h4>Country of origin</h4>
+                            <div class="related_movies_row" id="Country_of_origin">No</div>
+                        </li>
+                        <li>
+                            <h4>Director</h4>
+                            <div class="related_movies_row" id="Director">No</div>
+                        </li>
+                        <li>
+                            <h4>Rating(IMDB)</h4>
+                            <div class="related_movies_row" id="Rating">No</div>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

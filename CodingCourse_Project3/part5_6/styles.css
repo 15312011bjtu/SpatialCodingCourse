@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color:white;
+}
+
+
+body {
+    font-family: 'Adobe Arabic';
+    font-size: 1em;
+    background: #273746;
+    /*background-image: url("https://slm-assets.secondlife.com/assets/23797104/view_large/Black___White_Famous_Hollywood_Sign.jpg?1560050612&_gl=1*xxk43q*_ga*OTgwNDY3Njk1LjE2NTAyNDI5MDE.*_ga_T7G7P6DCEC*MTY1MDI0MjkwMS4xLjAuMTY1MDI0MjkwMS42MA.."); */
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+nav {
+    font-size: 3em;
+    margin: 1%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.backhome {
+    /*background: white;*/
+    /*border: 2px solid white;*/
+    margin-left: auto;
+}
+
+
+
+.main_box {
+    display: flex;
+    flex-direction: row;    
+    background: gray;
+    border: 2px solid white;
+    margin: 0% 10% 0% 10%;
+    padding: 1%;
+}
+
+/* left */
+.sereach_result {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 2.5% 0% 0%;
+    width: 20%;
+    height: 100%;
+}
+
+.screen_SearchTarget {
+    background: tomato;
+}
+
+.movie_list {
+    padding: 1em;
+    overflow: auto;
+    height:720px;/* here */
+    width:100%;
+}
+
+.movielist_container {
+    /*   background-color: #f15b31; */
+    padding: 2px;
+    /*   display: flex; */
+    border: 2px solid #141414;
+    width: 80%;
+    margin: 2px;
+    background: blue;
+}
+
+.poster_left /*fixed the width*/  {
+    width: 100%;
+}
+
+
+
+
+
+.page_nav {
+    background: blue;
+}
+
+.line_1 {
+    width: 0.25px;
+    /*height:20%;*/
+    border-right: solid;
+}
+
+
+
+/* right */
+.right_half {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 0% 0% 2.5%;
+    /*background: red;*/
+    width: 50%;
+}
+
+
+.movie_selected {
+    display: flex;
+    flex-direction: column;
+    /*background: red;*/
+
+    overflow: auto;
+    height: 720px; /* here */
+    padding: 1em;
+}
+
+.main_info {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_poster {
+    margin: 1%;
+    width:40%;
+}
+.detail_text {
+    width:50%;
+}
+
+.text_list {
+    margin:2%
+
+}
+
+.infolist_container {
+
+}
+
+
+
+.storyline {
+
+}
+
+
+.related_movies {
+    /*display:*/
+}
+
+.Selected_Name {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: bold;
+}
+
+.related_movies_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.poster_related {
+    width:8%;
+    margin: 1%;
+}
+

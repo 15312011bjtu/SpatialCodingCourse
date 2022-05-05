@@ -173,9 +173,9 @@ nav {
 
 @media (min-width: 960px) {
     .movie_list {
-        width:1080px;
+        height:1080px;
     }
     .movie_selected {
-        width: 1080px;
+        height: 1080px;
     }
 }

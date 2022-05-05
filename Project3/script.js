@@ -1,18 +1,4 @@
 ﻿
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const searchBar = document.querySelector("input");
 const movie_list = document.querySelector(".movie_list");
 const screen_SearchTarget = document.querySelector(".screen_SearchTarget")
@@ -57,11 +43,13 @@ function displaySearched(SearchedMovie) /*input SearchedMovie, a list of include
         title_left.textContent = SearchedMovie[i].Name+" (";
         title_left.selectedMovie = SearchedMovie[i]; //额外赋值，方便传递
         title_left.addEventListener('click', RenderSelectedInfo);
+        title_left.setAttribute("color", "black"); //here
         list_item_left.appendChild(title_left);
 
         let year_left = document.createElement("span");
         year_left.textContent = SearchedMovie[i].Release_year + " )";
-        title_left.addEventListener('click', RenderSelectedInfo);
+        year_left.addEventListener('click', RenderSelectedInfo);
+        year_left.setAttribute("color", "black");
         list_item_left.appendChild(year_left);
 
         let poster_left = document.createElement("img");
@@ -93,7 +81,7 @@ function RenderSelectedInfo(e) {
     /*  text list of info */
     let Name = document.createElement("li"); // name
     Name.textContent = this.selectedMovie.Name;
-    Name.setAttribute("style", "font-size: 4em"); //here
+    Name.setAttribute("style", "font-size: 4em"); 
     Name.classList.add('Selected_Name');
     text_list.appendChild(Name);
     let Rating = document.createElement("li"); // rating

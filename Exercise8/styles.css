@@ -36,7 +36,7 @@ li {
 }
 
 .red {
-    background-color: tomato;
+    background-color: red;
 }
 
 /* main section*/
@@ -49,8 +49,8 @@ p {
 }
 /*color changes*/
 .red-theme {
-    background-color: tomato;
-    color: white;
+    background-color: red;
+    color: black;
 }
 
 .white-theme {
@@ -60,11 +60,10 @@ p {
 
 .pink-theme {
     background-color: pink;
-    color: white;
+    color: yellow;
 }
 
 .blue-theme {
     background-color: blue;
-    /*   change text to white */
     color: white;
 }

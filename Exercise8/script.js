@@ -1,7 +1,6 @@
 /*declare elements, defined as const*/
 const change = document.getElementById('Button');
-
-const fly = document.getElementsByTagName('body')[0];
+const body = document.querySelector("body");
 
 const pink = document.querySelector('.pink');
 const white = document.querySelector('.white');
@@ -10,23 +9,35 @@ const red = document.querySelector('.red');
 
 //console.log(change)
 
-
+theme_list = ['pink-theme', 'white-theme', 'red-theme','blue-theme']
 
 
 function changeColorPink() {
-    fly.style.background = 'pink';
+    for (let i = 0; i < theme_list.length; i++) {
+        body.classList.remove(theme_list[i]);
+    }
+    body.classList.add('pink-theme');
 }
 
 function changeColorWhite() {
-    fly.style.background = 'white';
+    for (let i = 0; i < theme_list.length; i++) {
+        body.classList.remove(theme_list[i]);
+    }    
+    body.classList.add('white-theme');
 }
 
 function changeColorBlue() {
-    fly.style.background = 'blue';
+    for (let i = 0; i < theme_list.length; i++) {
+        body.classList.remove(theme_list[i]);
+    }
+    body.classList.add('blue-theme');
 }
 
 function changeColorRed() {
-    fly.style.background = 'red';
+    for (let i = 0; i < theme_list.length; i++) {
+        body.classList.remove(theme_list[i]);
+    }
+    body.classList.add('red-theme');
 }
 
 

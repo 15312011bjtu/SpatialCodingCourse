@@ -174,28 +174,12 @@ nav {
 
 @media (max-width: 960px) {
     .movie_list {
-        height: 1920px;
-        width: 1080px;
+        height: 80vw;
+        width: 100%;
     }
 
     .movie_selected {
-        height: 1920px;
-        width: 1080px;
+        height: 80vw;
+        width: 100%;
     }
 
-
-
-    /*
-
-    @media (min-width: 960px) {
-    .movie_list {
-        height:1920px;
-        width:1080px;
-    }
-    .movie_selected {
-        height: 1920px;
-        width: 1080px;
-    }
-}
-
-*/

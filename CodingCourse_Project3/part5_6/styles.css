@@ -54,7 +54,8 @@ nav {
 }
 
 .screen_SearchTarget {
-    background: tomato;
+    /*background: tomato;*/
+    font-style: italic;
 }
 
 .movie_list {
@@ -100,7 +101,7 @@ nav {
     flex-direction: column;
     margin: 0% 0% 0% 2.5%;
     /*background: red;*/
-    width: 50%;
+    width: 70%;
 }
 
 
@@ -128,7 +129,7 @@ nav {
 }
 
 .text_list {
-    margin:2%
+    margin:2%;
 
 }
 
@@ -147,10 +148,14 @@ nav {
     /*display:*/
 }
 
+.Related_Movie_List {
+    text-align:center;
+    font-style:italic;
+}
+
 .Selected_Name {
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     font-family: 'Oswald', sans-serif;
-
     font-weight: bold;
 }
 
@@ -164,3 +169,13 @@ nav {
     margin: 1%;
 }
 
+
+
+@media (min-width: 960px) {
+    .movie_list {
+        width:80vw;
+    }
+    .movie_selected {
+        width: 80vw;
+    }
+}

@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Project2",
-    "\\Project2\\assets"
+    "\\Project2\\assets",
+    "\\Project3",
+    "\\Project3\\assets"
   ],
-  "SelectedNode": "\\Project2\\assets\\styles.css",
+  "SelectedNode": "\\Project3\\index.html",
   "PreviewInSolutionExplorer": false
 }

@@ -6,7 +6,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 
@@ -110,8 +110,8 @@ img {
 
 
 .icon {
-    width: 20em;
-    height: 20em;
+    width: 10em;
+    height: 10em;
     position: relative;
     left: 0%;
     margin-left: 0em;
@@ -123,14 +123,17 @@ img {
 }
 
 .line_1 {
+    justify-content: center;
     display: flex;
     flex-direction: row;
 }
 
 
 .line_2 {
-    margin:1em;
-    padding:1em;
+    width: 12em;
+    height: 12em;
+    margin: 1em;
+    padding: 1em;
 }
 
     .line_2:hover {

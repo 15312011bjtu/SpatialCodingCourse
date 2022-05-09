@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Project3 by Hanbo_Lei</title>
+    <title>Project 3 by Hanbo_Lei</title>
     <link rel="stylesheet" href="assets/styles.css">
 
     <!-- font-family -->
@@ -32,21 +32,22 @@
 
         <!-- right -->
         <div class="right_half">
-            <div class="screen_SearchTarget" style="font-size:3em">Information and Related Movies of Selected Movie</div>
+            <div class="screen_SearchTarget" style="font-size:3em">Information of Selected Movie and Related Movies</div>
+            <div class="screen_SearchTarget" style="font-size:1em;margin:1em 0em 1em 0em;">please click on posters for detailed information</div>
             <div class="movie_selected">
 
                 <div class="main_info">
                     <div class="main_poster"></div>
                     <div class="detail_text">
                         <ul class="text_list">
-                            No Movie Selected (click a poster for detailed information)
+                            No Movie Selected
                         </ul>
                     </div>
                 </div>
                 <div class="storyline"></div>
                 <div class="related_movies">
                     <br /><br />
-                          <p class="Related_Movie_List">Related Movie List</p>
+                    <p class="Related_Movie_List">Related Movie List</p>
                     <ul>
                         <li>
                             <h4>Genre</h4>
@@ -65,8 +66,17 @@
                             <div class="related_movies_row" id="Director">No</div>
                         </li>
                         <li>
+                            <h4>Writer</h4>
+                            <div class="related_movies_row" id="Writer">No</div>
+                        </li>
+                        <li>
                             <h4>Rating(IMDB)</h4>
                             <div class="related_movies_row" id="Rating">No</div>
+                        </li>
+                        <li style="visibility: hidden">
+                            <!-- it is hidden because almost no same data in "Stars" in the top 100 movies of IMDB-->
+                            <h4>Stars</h4>
+                            <div class="related_movies_row" id="Stars">No</div>
                         </li>
 
 

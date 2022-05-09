@@ -8,6 +8,8 @@ const related_genre = document.getElementById("Genre");
 const related_year = document.getElementById("Release_Year");
 const related_country = document.getElementById("Country_of_origin");
 const related_director = document.getElementById("Director");
+const related_writer = document.getElementById("Writer");
+const related_stars = document.getElementById("Stars");
 const related_rating = document.getElementById("Rating");
 
 
@@ -204,6 +206,48 @@ function RenderSelectedInfo(e) {
         poster_related.addEventListener('click', RenderSelectedInfo);
         related_director.appendChild(poster_related);
     }
+    //relate Writer
+    searchString = this.selectedMovie.Writer;
+    SearchedMovie = movie_dataset.filter(function (f) {
+        if (searchString) {
+            return searchString.every(i => f.Writer.includes(i))//every还是some区分是含有全部还是部分
+        }
+    });
+    index_selectedMovie = SearchedMovie.indexOf(this.selectedMovie) // find the index of selectedMovie
+    SearchedMovie.splice(index_selectedMovie, 1); // 2nd parameter means remove one item only
+    SearchedMovie.sort((a, b) => parseFloat(b.Rating) - parseFloat(a.Rating)); // descending order by IMDB Rating
+    if (SearchedMovie.length > 10) /* limit the length below 10 */ {
+        SearchedMovie = SearchedMovie.slice(0, 10)
+    }
+    for (let i = 0; i < SearchedMovie.length; i++) {
+        let poster_related = document.createElement("img");
+        poster_related.setAttribute("src", SearchedMovie[i].Poster);
+        poster_related.classList.add('poster_related');
+        poster_related.selectedMovie = SearchedMovie[i]; //额外赋值，方便传递
+        poster_related.addEventListener('click', RenderSelectedInfo);
+        related_writer.appendChild(poster_related);
+    }
+    //relate Stars
+    searchString = this.selectedMovie.Stars;
+    SearchedMovie = movie_dataset.filter(function (f) {
+        if (searchString) {
+            return searchString.every(i => f.Stars.includes(i))//every还是some区分是含有全部还是部分
+        }
+    });
+    index_selectedMovie = SearchedMovie.indexOf(this.selectedMovie) // find the index of selectedMovie
+    SearchedMovie.splice(index_selectedMovie, 1); // 2nd parameter means remove one item only
+    SearchedMovie.sort((a, b) => parseFloat(b.Rating) - parseFloat(a.Rating)); // descending order by IMDB Rating
+    if (SearchedMovie.length > 10) /* limit the length below 10 */ {
+        SearchedMovie = SearchedMovie.slice(0, 10)
+    }
+    for (let i = 0; i < SearchedMovie.length; i++) {
+        let poster_related = document.createElement("img");
+        poster_related.setAttribute("src", SearchedMovie[i].Poster);
+        poster_related.classList.add('poster_related');
+        poster_related.selectedMovie = SearchedMovie[i]; //额外赋值，方便传递
+        poster_related.addEventListener('click', RenderSelectedInfo);
+        related_stars.appendChild(poster_related);
+    }
     //relate Rating
     searchString = this.selectedMovie.Rating;
     SearchedMovie = movie_dataset.filter(function (f) {
@@ -249,6 +293,8 @@ function clearMainInfo() {
     related_year.innerHTML = "";
     related_country.innerHTML = "";
     related_director.innerHTML = "";
+    related_writer.innerHTML = "";
+    related_stars.innerHTML = "";
     related_rating.innerHTML = "";
     
 }
@@ -677,7 +723,7 @@ const movie_dataset = [
     },
     {
         Web: "https://www.imdb.com/title/tt0057012/",
-        Name: "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        Name: "Dr. Strangelove",
         Rating: 8.4,
         Genres: ['Comedy', 'War'],
         Poster: "https://m.media-amazon.com/images/M/MV5BZWI3ZTMxNjctMjdlNS00NmUwLWFiM2YtZDUyY2I3N2MxYTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
